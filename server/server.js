@@ -4,7 +4,9 @@ var {mongoose} = require('./db/mongoose');
 var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
 var app = express();
-
+app.get('/',(req,res) =>{
+    res.send('Welcome to express');
+});
 app.use(bodyParser.json());
 
 app.post('/todos',(req,res) =>{
