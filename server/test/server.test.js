@@ -30,3 +30,6 @@ describe('POST /todos',() =>{
           });
       });
 });
+describe('GET /todo/:id',() ={
+
+});
