@@ -7,4 +7,11 @@ var User = mongoose.model('User',{
         minlength:1
     }    
 });
-module.exports = {User};
+var Group = mongoose.model('Group',{
+    role:{
+        type: String,
+        required: true,
+        trim: true
+    }
+})
+module.exports = {User,Group};
